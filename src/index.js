@@ -17,7 +17,7 @@ app.use(cors());
 app.use(errorHandler);
 
 // Routes
-app.use("/item", itemRouter);
+app.use("/items", itemRouter);
 app.use("/generate", askAiRouter);
 app.get("/health", (_req, res) => {
   res.status(200).send("App is running healthy.");
